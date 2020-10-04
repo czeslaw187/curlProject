@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="GMichniewicz" />
+        <title>GeoWebservices Overview</title>
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body>
+
+        <div class="main">
+            <table>
+                <tr>
+                    <td>API Name</td>
+                    <td>API Description</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1.Geo code</td>
+                    <td>Get the country code of coordinates lat=50, lng=50</td>
+                    <td><button id="submitOne">Submit</button></td>
+                </tr>
+                <tr>
+                    <td>2.Ocean</td>
+                    <td>Get ocean name at coordinates lat=40, lng=-43</td>
+                    <td><button id="submitTwo">Submit</button></td>
+                </tr>
+                <tr>
+                    <td>3.Elevation - SRTM1</td>
+                    <td>A single number giving the elevation in meters according to srtm1</td>
+                    <td><button id="submitThree">Submit</button></td>
+                </tr>
+                <tr>
+                    <td id="result" colspan="3"></td>
+                </tr>
+            </table>
+
+        </div>    
+
+        <div id="preloader"></div>
+        <script src="vendors/jquery/jquery-3.5.1.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
